@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Andersonmisilva/Repositorio_local/issues"
   },
-  "homepage": "https://github.com/Andersonmisilva/Repositorio_local#readme"
+  "homepage": "https://github.com/Andersonmisilva/Repositorio_local#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
