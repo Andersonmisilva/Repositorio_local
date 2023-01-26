@@ -1,17 +1,18 @@
-    function ConexaoDB(){
-
-const Sequelize = require('sequelize');
-const sequelize = new Sequelize('teste','root', '123456', {
+function ConexaoDB() {
+  const Sequelize = require("sequelize");
+  const sequelize = new Sequelize("teste", "root", "123456", {
     host: "localhost",
-    dialect: 'mariadb'
-});
+    dialect: "mariadb",
+  });
 
-sequelize.authenticate(). then(function(){
-    console.log("Conectado com sucesso")
-}). catch(function(erro){
-        console.log("Falha ao se conectar"+erro)
-});
-
+  sequelize
+    .authenticate()
+    .then(function () {
+      console.log("Conectado com sucesso");
+    })
+    .catch(function (erro) {
+      console.log("Falha ao se conectar" + erro);
+    });
 }
 
 module.exports = ConexaoDB;
