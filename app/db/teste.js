@@ -1,3 +1,6 @@
+const { SELECT, SHOWTABLES } = require("sequelize/types/query-types");
+const { format } = require("sequelize/types/utils");
+
 function ConexaoDB() {
   const Sequelize = require("sequelize");
   const sequelize = new Sequelize("teste", "root", "123456", {
@@ -14,5 +17,8 @@ function ConexaoDB() {
       console.log("Falha ao se conectar" + erro);
     });
 }
+SHOWTABLES;
+
+
 
 module.exports = ConexaoDB;
